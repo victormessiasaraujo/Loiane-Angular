@@ -1,5 +1,7 @@
+import { MeuFormModule } from './meu-form/meu-form.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 //import { CursosService } from './cursos/cursos.service';
@@ -24,6 +26,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     AppRoutingModule,
     CursosModule,
     TooltipModule.forRoot(),
+    FormsModule,
+    MeuFormModule
   ],
   providers: [
     //CursosService
