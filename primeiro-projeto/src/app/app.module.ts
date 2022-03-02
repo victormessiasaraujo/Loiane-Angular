@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 //import { CursosService } from './cursos/cursos.service';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +22,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CursosModule
+    CursosModule,
+    TooltipModule.forRoot(),
   ],
   providers: [
     //CursosService
