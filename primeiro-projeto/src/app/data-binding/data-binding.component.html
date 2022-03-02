@@ -84,5 +84,9 @@
   <article>
     <h3>Input/Output Properties</h3>
     <app-curso [nome]="nomeCurso"></app-curso>
+    <contador valor="10"></contador>
+    <br>
+    <contador [valor]="valorInicial"
+      (mudouValor)="onMudouValor($event)"></contador>
   </article>
 </section>
